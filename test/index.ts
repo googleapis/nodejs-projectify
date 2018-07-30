@@ -21,7 +21,7 @@ describe('projectId placeholder', () => {
   const PROJECT_ID = 'project-id';
 
   it('should replace any {{projectId}} it finds', () => {
-    assert.deepEqual(
+    assert.deepStrictEqual(
         replaceProjectIdToken(
             {
               here: 'A {{projectId}} Z',
@@ -77,7 +77,7 @@ describe('projectId placeholder', () => {
   });
 
   it('should replace more than one {{projectId}}', () => {
-    assert.deepEqual(
+    assert.deepStrictEqual(
         replaceProjectIdToken(
             {
               here: 'A {{projectId}} M {{projectId}} Z',
