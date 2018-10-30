@@ -30,6 +30,7 @@ export function replaceProjectIdToken(value: any, projectId: string): any {
   }
 
   if (value !== null && typeof value === 'object' &&
+      !(value instanceof Buffer) &&
       typeof value.hasOwnProperty === 'function') {
     for (const opt in value) {
       if (value.hasOwnProperty(opt)) {

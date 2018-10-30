@@ -95,4 +95,19 @@ describe('projectId placeholder', () => {
       });
     }, /Sorry, we cannot connect/);
   });
+
+  it('should return object containing a buffer as-is', () => {
+    const bufferContainingObject = {
+      prop1: 'A {{projectId}} Z',
+      buf: Buffer.from('test'),
+    };
+
+    const replaced = replaceProjectIdToken(bufferContainingObject, PROJECT_ID);
+    assert.deepStrictEqual(
+        {
+          prop1: `A ${PROJECT_ID} Z`,
+          buf: Buffer.from('test'),
+        },
+        replaced);
+  });
 });
