@@ -32,7 +32,7 @@
     "@types/mocha": "^5.2.4",
     "@types/node": "^10.5.2",
     "codecov": "^3.0.4",
-    "gts": "^0.8.0",
+    "gts": "^0.9.0",
     "hard-rejection": "^1.0.0",
     "intelli-espower-loader": "^1.0.1",
     "mocha": "^5.2.0",
