@@ -1,3 +1,5 @@
+import {Stream} from 'stream';
+
 /**
  * Copyright 2014 Google Inc. All Rights Reserved.
  *
@@ -30,7 +32,7 @@ export function replaceProjectIdToken(value: any, projectId: string): any {
   }
 
   if (value !== null && typeof value === 'object' &&
-      !(value instanceof Buffer) &&
+      !(value instanceof Buffer) && !(value instanceof Stream) &&
       typeof value.hasOwnProperty === 'function') {
     for (const opt in value) {
       if (value.hasOwnProperty(opt)) {
