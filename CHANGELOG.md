@@ -3,6 +3,20 @@
 [npm history][1]
 
 [1]: https://www.npmjs.com/package/@google-cloud/projectify?activeTab=versions
+## v0.3.2
+
+### Bug fixes
+- fix: do not replace projectId on stream objects ([#53](https://github.com/googleapis/nodejs-projectify/pull/53))
+
+### Dependencies
+- chore(deps): update dependency gts to ^0.9.0 ([#52](https://github.com/googleapis/nodejs-projectify/pull/52))
+
+### Internal / Testing Changes
+- chore: update eslintignore config ([#51](https://github.com/googleapis/nodejs-projectify/pull/51))
+- chore: use latest npm on Windows ([#50](https://github.com/googleapis/nodejs-projectify/pull/50))
+- chore: update CircleCI config ([#49](https://github.com/googleapis/nodejs-projectify/pull/49))
+- chore: include build in eslintignore ([#46](https://github.com/googleapis/nodejs-projectify/pull/46))
+
 ## v0.3.1
 
 ### Implementation Changes
