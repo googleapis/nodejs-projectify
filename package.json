@@ -1,6 +1,6 @@
 {
   "name": "@google-cloud/projectify",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "A simple utility for replacing the projectid token in objects.",
   "main": "build/src/index.js",
   "types": "build/src/index.d.ts",
