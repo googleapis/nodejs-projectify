@@ -15,6 +15,7 @@
  */
 
 import * as assert from 'assert';
+import * as stream from 'stream';
 import {replaceProjectIdToken} from '../src';
 
 describe('projectId placeholder', () => {
@@ -109,5 +110,14 @@ describe('projectId placeholder', () => {
           buf: Buffer.from('test'),
         },
         replaced);
+  });
+
+  it('should not inject projectId into stream', () => {
+    // tslint:disable-next-line: no-any
+    const transform = new stream.Transform() as any;
+    transform.prop = 'A {{projectId}} Z';
+
+    const replaced = replaceProjectIdToken(transform, PROJECT_ID);
+    assert.deepEqual(transform.prop, replaced.prop);
   });
 });
