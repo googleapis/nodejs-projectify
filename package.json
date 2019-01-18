@@ -16,7 +16,7 @@
     "prepare": "npm run compile",
     "pretest": "npm run compile",
     "posttest": "npm run lint",
-    "docs": "echo no docs 👻",
+    "docs": "compodoc src/",
     "presystem-test": "npm run compile",
     "samples-test": "cd samples/ && npm link ../ && npm test && cd ../",
     "system-test": "mocha build/system-test"
@@ -29,6 +29,7 @@
   "author": "Google Inc.",
   "license": "Apache-2.0",
   "devDependencies": {
+    "@compodoc/compodoc": "^1.1.7",
     "@types/mocha": "^5.2.4",
     "@types/node": "^10.5.2",
     "codecov": "^3.0.4",
