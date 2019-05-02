@@ -3,6 +3,18 @@
 [npm history][1]
 
 [1]: https://www.npmjs.com/package/@google-cloud/projectify?activeTab=versions
+## [1.0.0](https://www.github.com/googleapis/nodejs-projectify/compare/v0.3.3...v1.0.0) (2019-05-02)
+
+
+### Build System
+
+* upgrade engines field to >=8.10.0 ([#103](https://www.github.com/googleapis/nodejs-projectify/issues/103)) ([0149650](https://www.github.com/googleapis/nodejs-projectify/commit/0149650))
+
+
+### BREAKING CHANGES
+
+* upgrade engines field to >=8.10.0 (#103)
+
 ## v0.3.3
 
 03-12-2019 12:27 PDT
@@ -89,4 +101,3 @@ This patch release contains a few updates to the docs.  That's all!
 - remove that whitespace ([#9](https://github.com/googleapis/nodejs-projectify/pull/9))
 - chore: assert.deelEqual => assert.deepStrictEqual ([#6](https://github.com/googleapis/nodejs-projectify/pull/6))
 - chore: move mocha options to mocha.opts ([#5](https://github.com/googleapis/nodejs-projectify/pull/5))
-
