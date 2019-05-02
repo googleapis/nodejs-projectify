@@ -31,9 +31,13 @@ export function replaceProjectIdToken(value: any, projectId: string): any {
     value = (value as string[]).map(v => replaceProjectIdToken(v, projectId));
   }
 
-  if (value !== null && typeof value === 'object' &&
-      !(value instanceof Buffer) && !(value instanceof Stream) &&
-      typeof value.hasOwnProperty === 'function') {
+  if (
+    value !== null &&
+    typeof value === 'object' &&
+    !(value instanceof Buffer) &&
+    !(value instanceof Stream) &&
+    typeof value.hasOwnProperty === 'function'
+  ) {
     for (const opt in value) {
       if (value.hasOwnProperty(opt)) {
         value[opt] = replaceProjectIdToken(value[opt], projectId);
@@ -41,8 +45,10 @@ export function replaceProjectIdToken(value: any, projectId: string): any {
     }
   }
 
-  if (typeof value === 'string' &&
-      (value as string).indexOf('{{projectId}}') > -1) {
+  if (
+    typeof value === 'string' &&
+    (value as string).indexOf('{{projectId}}') > -1
+  ) {
     if (!projectId || projectId === '{{projectId}}') {
       throw new MissingProjectIdError();
     }
