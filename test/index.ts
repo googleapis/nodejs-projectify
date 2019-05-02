@@ -23,70 +23,74 @@ describe('projectId placeholder', () => {
 
   it('should replace any {{projectId}} it finds', () => {
     assert.deepStrictEqual(
-        replaceProjectIdToken(
+      replaceProjectIdToken(
+        {
+          here: 'A {{projectId}} Z',
+          nested: {
+            here: 'A {{projectId}} Z',
+            nested: {
+              here: 'A {{projectId}} Z',
+            },
+          },
+          array: [
             {
               here: 'A {{projectId}} Z',
               nested: {
                 here: 'A {{projectId}} Z',
-                nested: {
-                  here: 'A {{projectId}} Z',
-                },
               },
-              array: [
+              nestedArray: [
                 {
                   here: 'A {{projectId}} Z',
                   nested: {
                     here: 'A {{projectId}} Z',
                   },
-                  nestedArray: [
-                    {
-                      here: 'A {{projectId}} Z',
-                      nested: {
-                        here: 'A {{projectId}} Z',
-                      },
-                    },
-                  ],
-                },
-              ],
-            },
-            PROJECT_ID),
-        {
-          here: 'A ' + PROJECT_ID + ' Z',
-          nested: {
-            here: 'A ' + PROJECT_ID + ' Z',
-            nested: {
-              here: 'A ' + PROJECT_ID + ' Z',
-            },
-          },
-          array: [
-            {
-              here: 'A ' + PROJECT_ID + ' Z',
-              nested: {
-                here: 'A ' + PROJECT_ID + ' Z',
-              },
-              nestedArray: [
-                {
-                  here: 'A ' + PROJECT_ID + ' Z',
-                  nested: {
-                    here: 'A ' + PROJECT_ID + ' Z',
-                  },
                 },
               ],
             },
           ],
-        });
+        },
+        PROJECT_ID
+      ),
+      {
+        here: 'A ' + PROJECT_ID + ' Z',
+        nested: {
+          here: 'A ' + PROJECT_ID + ' Z',
+          nested: {
+            here: 'A ' + PROJECT_ID + ' Z',
+          },
+        },
+        array: [
+          {
+            here: 'A ' + PROJECT_ID + ' Z',
+            nested: {
+              here: 'A ' + PROJECT_ID + ' Z',
+            },
+            nestedArray: [
+              {
+                here: 'A ' + PROJECT_ID + ' Z',
+                nested: {
+                  here: 'A ' + PROJECT_ID + ' Z',
+                },
+              },
+            ],
+          },
+        ],
+      }
+    );
   });
 
   it('should replace more than one {{projectId}}', () => {
     assert.deepStrictEqual(
-        replaceProjectIdToken(
-            {
-              here: 'A {{projectId}} M {{projectId}} Z',
-            },
-            PROJECT_ID),
+      replaceProjectIdToken(
         {
-          here: 'A ' + PROJECT_ID + ' M ' + PROJECT_ID + ' Z',
-        });
+          here: 'A {{projectId}} M {{projectId}} Z',
+        },
+        PROJECT_ID
+      ),
+      {
+        here: 'A ' + PROJECT_ID + ' M ' + PROJECT_ID + ' Z',
+      }
+    );
   });
 
   it('should throw if it needs a projectId and cannot find it', () => {
@@ -105,11 +109,12 @@ describe('projectId placeholder', () => {
 
     const replaced = replaceProjectIdToken(bufferContainingObject, PROJECT_ID);
     assert.deepStrictEqual(
-        {
-          prop1: `A ${PROJECT_ID} Z`,
-          buf: Buffer.from('test'),
-        },
-        replaced);
+      {
+        prop1: `A ${PROJECT_ID} Z`,
+        buf: Buffer.from('test'),
+      },
+      replaced
+    );
   });
 
   it('should not inject projectId into stream', () => {
@@ -118,6 +123,6 @@ describe('projectId placeholder', () => {
     transform.prop = 'A {{projectId}} Z';
 
     const replaced = replaceProjectIdToken(transform, PROJECT_ID);
-    assert.deepEqual(transform.prop, replaced.prop);
+    assert.deepStrictEqual(transform.prop, replaced.prop);
   });
 });
