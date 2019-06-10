@@ -14,4 +14,10 @@
  * limitations under the License.
  */
 
-console.warn(`no samples available 👻`);
+// [START projectify_quickstart]
+const {replaceProjectIdToken} = require('@google-cloud/projectify');
+const options = {
+  projectId: '{{projectId}}'
+};
+replaceProjectIdToken(options, 'fake-project-id');
+// [END projectify_quickstart]

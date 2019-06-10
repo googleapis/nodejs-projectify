@@ -1,0 +1,8 @@
+{
+  "name": "projectify",
+  "name_pretty": "Google Cloud Common Projectify",
+  "release_level": "ga",
+  "language": "nodejs",
+  "repo": "googleapis/nodejs-projectify",
+  "distribution_name": "@google-cloud/projectify"
+}
