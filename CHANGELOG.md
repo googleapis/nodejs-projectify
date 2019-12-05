@@ -3,6 +3,13 @@
 [npm history][1]
 
 [1]: https://www.npmjs.com/package/@google-cloud/projectify?activeTab=versions
+### [1.0.3](https://www.github.com/googleapis/nodejs-projectify/compare/v1.0.2...v1.0.3) (2019-12-05)
+
+
+### Bug Fixes
+
+* **deps:** pin TypeScript below 3.7.0 ([6c95307](https://www.github.com/googleapis/nodejs-projectify/commit/6c953070139a77d30c4ce5b7dee1443874046906))
+
 ### [1.0.2](https://www.github.com/googleapis/nodejs-projectify/compare/v1.0.1...v1.0.2) (2019-11-14)
 
 
