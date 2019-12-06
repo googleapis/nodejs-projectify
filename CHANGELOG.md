@@ -3,6 +3,13 @@
 [npm history][1]
 
 [1]: https://www.npmjs.com/package/@google-cloud/projectify?activeTab=versions
+### [1.0.4](https://www.github.com/googleapis/nodejs-projectify/compare/v1.0.3...v1.0.4) (2019-12-05)
+
+
+### Bug Fixes
+
+* **publish:** publication failed to reach npm ([#141](https://www.github.com/googleapis/nodejs-projectify/issues/141)) ([5406ba5](https://www.github.com/googleapis/nodejs-projectify/commit/5406ba5e1d43a228a19072023c1baebce34190af))
+
 ### [1.0.3](https://www.github.com/googleapis/nodejs-projectify/compare/v1.0.2...v1.0.3) (2019-12-05)
 
 
