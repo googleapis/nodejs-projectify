@@ -26,18 +26,17 @@ import {Stream} from 'stream';
 // tslint:disable-next-line:no-any
 export function replaceProjectIdToken(value: any, projectId: string): any {
   if (Array.isArray(value)) {
-    value = (value as string[]).map(v => replaceProjectIdToken(v, projectId));
+    value = (value as string[]).map((v) => replaceProjectIdToken(v, projectId));
   }
 
   if (
     value !== null &&
     typeof value === 'object' &&
     !(value instanceof Buffer) &&
-    !(value instanceof Stream) &&
-    typeof value.hasOwnProperty === 'function'
+    !(value instanceof Stream)
   ) {
     for (const opt in value) {
-      if (value.hasOwnProperty(opt)) {
+      if (Object.prototype.hasOwnProperty.call(value, opt)) {
         value[opt] = replaceProjectIdToken(value[opt], projectId);
       }
     }
