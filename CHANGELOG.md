@@ -3,6 +3,23 @@
 [npm history][1]
 
 [1]: https://www.npmjs.com/package/@google-cloud/projectify?activeTab=versions
+## [2.0.0](https://www.github.com/googleapis/nodejs-projectify/compare/v1.0.4...v2.0.0) (2020-03-24)
+
+
+### ⚠ BREAKING CHANGES
+
+* typescript@3.7 introduced some breaking changes
+* drop Node 8 from engines field (#172)
+
+### Features
+
+* drop Node 8 from engines field ([#172](https://www.github.com/googleapis/nodejs-projectify/issues/172)) ([3eac424](https://www.github.com/googleapis/nodejs-projectify/commit/3eac424bfb1ee47144a77888dc68db687988945e))
+
+
+### Build System
+
+* update to latest version of gts/typescript ([#171](https://www.github.com/googleapis/nodejs-projectify/issues/171)) ([30f90cc](https://www.github.com/googleapis/nodejs-projectify/commit/30f90cc172da6ed9394da91869556bf5eef42434))
+
 ### [1.0.4](https://www.github.com/googleapis/nodejs-projectify/compare/v1.0.3...v1.0.4) (2019-12-05)
 
 
