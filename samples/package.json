@@ -3,7 +3,7 @@
   "license": "Apache-2.0",
   "author": "Google LLC",
   "engines": {
-    "node": ">=8"
+    "node": ">=10"
   },
   "repository": "googleapis/nodejs-projectify",
   "private": true,
@@ -11,9 +11,9 @@
     "test": "mocha system-test"
   },
   "dependencies": {
-    "@google-cloud/projectify": "^1.0.4"
+    "@google-cloud/projectify": "^2.0.0"
   },
   "devDependencies": {
-    "mocha": "^7.0.0"
+    "mocha": "^7.1.1"
   }
 }
