@@ -49,7 +49,7 @@ npm install @google-cloud/projectify
 ```javascript
 const {replaceProjectIdToken} = require('@google-cloud/projectify');
 const options = {
-  projectId: '{{projectId}}'
+  projectId: '{{projectId}}',
 };
 replaceProjectIdToken(options, 'fake-project-id');
 
