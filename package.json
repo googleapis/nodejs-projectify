@@ -33,7 +33,7 @@
     "@types/mocha": "^7.0.2",
     "@types/node": "^10.17.17",
     "codecov": "^3.6.5",
-    "gts": "2.0.0-alpha.5",
+    "gts": "2.0.0-alpha.9",
     "mocha": "^7.1.1",
     "c8": "^7.1.0",
     "typescript": "3.8.3",
