@@ -117,7 +117,7 @@ describe('projectId placeholder', () => {
   });
 
   it('should not inject projectId into stream', () => {
-    // eslint-disable-next-line  @typescript-eslint/no-explicit-any
+    /* eslint-disable  @typescript-eslint/no-explicit-any */
     const transform = new stream.Transform() as any;
     transform.prop = 'A {{projectId}} Z';
 
