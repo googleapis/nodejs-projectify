@@ -23,7 +23,7 @@ import {Stream} from 'stream';
  * @param {string} projectId - A projectId. If not provided
  * @return {*} - The original argument with all placeholders populated.
  */
-/* eslint-disable  @typescript-eslint/no-explicit-any */
+// eslint-disable-next-line  @typescript-eslint/no-explicit-any
 export function replaceProjectIdToken(value: any, projectId: string): any {
   if (Array.isArray(value)) {
     value = (value as string[]).map(v => replaceProjectIdToken(v, projectId));
@@ -37,7 +37,7 @@ export function replaceProjectIdToken(value: any, projectId: string): any {
     typeof value.hasOwnProperty === 'function'
   ) {
     for (const opt in value) {
-      /* eslint-disable no-prototype-builtins */
+      // eslint-disable-next-line no-prototype-builtins
       if (value.hasOwnProperty(opt)) {
         value[opt] = replaceProjectIdToken(value[opt], projectId);
       }
