@@ -1,6 +1,12 @@
 {
-  "updateTime": "2020-03-22T11:39:33.214878Z",
   "sources": [
+    {
+      "git": {
+        "name": ".",
+        "remote": "https://github.com/googleapis/nodejs-projectify.git",
+        "sha": "9adb5dbe0f09e9d5f09b41e6484a47aab17b83ef"
+      }
+    },
     {
       "git": {
         "name": "synthtool",

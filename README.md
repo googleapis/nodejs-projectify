@@ -49,7 +49,7 @@ npm install @google-cloud/projectify
 ```javascript
 const {replaceProjectIdToken} = require('@google-cloud/projectify');
 const options = {
-  projectId: '{{projectId}}'
+  projectId: '{{projectId}}',
 };
 replaceProjectIdToken(options, 'fake-project-id');
 
@@ -67,27 +67,6 @@ has instructions for running the samples.
 | Quickstart | [source code](https://github.com/googleapis/nodejs-projectify/blob/master/samples/quickstart.js) | [![Open in Cloud Shell][shell_img]](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/googleapis/nodejs-projectify&page=editor&open_in_editor=samples/quickstart.js,samples/README.md) |
 
 
-
-## Supported Node.js Versions
-
-Our client libraries follow the [Node.js release schedule](https://nodejs.org/en/about/releases/).
-Libraries are compatible with all current _active_ and _maintenance_ versions of
-Node.js.
-
-Client libraries targetting some end-of-life versions of Node.js are available, and
-can be installed via npm [dist-tags](https://docs.npmjs.com/cli/dist-tag).
-The dist-tags follow the naming convention `legacy-(version)`.
-
-_Legacy Node.js versions are supported as a best effort:_
-
-* Legacy versions will not be tested in continuous integration.
-* Some security patches may not be able to be backported.
-* Dependencies will not be kept up-to-date, and features will not be backported.
-
-#### Legacy tags available
-
-* `legacy-8`: install client libraries from this dist-tag for versions
-  compatible with Node.js 8.
 
 ## Versioning
 
