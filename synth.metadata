@@ -4,7 +4,7 @@
       "git": {
         "name": ".",
         "remote": "https://github.com/googleapis/nodejs-projectify.git",
-        "sha": "fe821fcf9320fc0e233819fdfa77a046998dea58"
+        "sha": "efeb9699525e668e17deb7015789c10a768fb7bf"
       }
     },
     {
