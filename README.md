@@ -14,6 +14,9 @@
 A simple utility for replacing the projectid token in objects.
 
 
+A comprehensive list of changes in each version may be found in
+[the CHANGELOG](https://github.com/googleapis/nodejs-projectify/blob/master/CHANGELOG.md).
+
 
 
 * [github.com/googleapis/nodejs-projectify](https://github.com/googleapis/nodejs-projectify)
