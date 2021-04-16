@@ -4,14 +4,14 @@
       "git": {
         "name": ".",
         "remote": "https://github.com/googleapis/nodejs-projectify.git",
-        "sha": "81d8032d73e7788db7bfb48e180c7f39759504e5"
+        "sha": "29abfd0c00e8278d4417282e95dff59238ee7f84"
       }
     },
     {
       "git": {
         "name": "synthtool",
         "remote": "https://github.com/googleapis/synthtool.git",
-        "sha": "57c23fa5705499a4181095ced81f0ee0933b64f6"
+        "sha": "898b38a6f4fab89a76dfb152480bb034a781331b"
       }
     }
   ]
