@@ -20,9 +20,7 @@
     "docs-test": "linkinator docs",
     "predocs-test": "npm run docs",
     "prelint": "cd samples; npm link ../; npm install",
-    "precompile": "gts clean",
-    "api-extractor": "api-extractor run --local",
-    "api-documenter": "api-documenter yaml --input-folder=temp"
+    "precompile": "gts clean"
   },
   "keywords": [],
   "files": [
@@ -40,9 +38,7 @@
     "mocha": "^8.0.0",
     "c8": "^7.1.0",
     "typescript": "3.8.3",
-    "linkinator": "^2.0.4",
-    "@microsoft/api-documenter": "^7.8.10",
-    "@microsoft/api-extractor": "^7.8.10"
+    "linkinator": "^2.0.4"
   },
   "engines": {
     "node": ">=10"
