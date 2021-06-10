@@ -3,6 +3,13 @@
 [npm history][1]
 
 [1]: https://www.npmjs.com/package/@google-cloud/projectify?activeTab=versions
+## [2.1.0](https://www.github.com/googleapis/nodejs-projectify/compare/v2.0.1...v2.1.0) (2021-06-10)
+
+
+### Features
+
+* add `gcf-owl-bot[bot]` to `ignoreAuthors` ([#245](https://www.github.com/googleapis/nodejs-projectify/issues/245)) ([30f0499](https://www.github.com/googleapis/nodejs-projectify/commit/30f0499ade5f140774c3aa672b44fd3538e72309))
+
 ### [2.0.1](https://www.github.com/googleapis/nodejs-projectify/compare/v2.0.0...v2.0.1) (2020-07-06)
 
 
