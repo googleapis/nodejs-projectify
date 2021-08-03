@@ -17,7 +17,7 @@ A simple utility for replacing the projectid token in objects.
 A comprehensive list of changes in each version may be found in
 [the CHANGELOG](https://github.com/googleapis/nodejs-projectify/blob/master/CHANGELOG.md).
 
-
+* [Google Cloud Common Projectify Node.js Client API Reference][client-docs]
 
 * [github.com/googleapis/nodejs-projectify](https://github.com/googleapis/nodejs-projectify)
 
@@ -69,6 +69,9 @@ Samples are in the [`samples/`](https://github.com/googleapis/nodejs-projectify/
 | Quickstart | [source code](https://github.com/googleapis/nodejs-projectify/blob/master/samples/quickstart.js) | [![Open in Cloud Shell][shell_img]](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/googleapis/nodejs-projectify&page=editor&open_in_editor=samples/quickstart.js,samples/README.md) |
 
 
+
+The [Google Cloud Common Projectify Node.js Client API Reference][client-docs] documentation
+also contains samples.
 
 ## Supported Node.js Versions
 
@@ -126,7 +129,7 @@ Apache Version 2.0
 
 See [LICENSE](https://github.com/googleapis/nodejs-projectify/blob/master/LICENSE)
 
-
+[client-docs]: https://cloud.google.com/nodejs/docs/reference/projectify/latest
 
 [shell_img]: https://gstatic.com/cloudssh/images/open-btn.png
 [projects]: https://console.cloud.google.com/project
