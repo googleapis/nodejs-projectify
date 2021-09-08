@@ -6,7 +6,7 @@
 
 [![release level](https://img.shields.io/badge/release%20level-general%20availability%20%28GA%29-brightgreen.svg?style=flat)](https://cloud.google.com/terms/launch-stages)
 [![npm version](https://img.shields.io/npm/v/@google-cloud/projectify.svg)](https://www.npmjs.org/package/@google-cloud/projectify)
-[![codecov](https://img.shields.io/codecov/c/github/googleapis/nodejs-projectify/master.svg?style=flat)](https://codecov.io/gh/googleapis/nodejs-projectify)
+[![codecov](https://img.shields.io/codecov/c/github/googleapis/nodejs-projectify/main.svg?style=flat)](https://codecov.io/gh/googleapis/nodejs-projectify)
 
 
 
@@ -15,7 +15,7 @@ A simple utility for replacing the projectid token in objects.
 
 
 A comprehensive list of changes in each version may be found in
-[the CHANGELOG](https://github.com/googleapis/nodejs-projectify/blob/master/CHANGELOG.md).
+[the CHANGELOG](https://github.com/googleapis/nodejs-projectify/blob/main/CHANGELOG.md).
 
 * [Google Cloud Common Projectify Node.js Client API Reference][client-docs]
 
@@ -62,11 +62,11 @@ replaceProjectIdToken(options, 'fake-project-id');
 
 ## Samples
 
-Samples are in the [`samples/`](https://github.com/googleapis/nodejs-projectify/tree/master/samples) directory. Each sample's `README.md` has instructions for running its sample.
+Samples are in the [`samples/`](https://github.com/googleapis/nodejs-projectify/tree/main/samples) directory. Each sample's `README.md` has instructions for running its sample.
 
 | Sample                      | Source Code                       | Try it |
 | --------------------------- | --------------------------------- | ------ |
-| Quickstart | [source code](https://github.com/googleapis/nodejs-projectify/blob/master/samples/quickstart.js) | [![Open in Cloud Shell][shell_img]](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/googleapis/nodejs-projectify&page=editor&open_in_editor=samples/quickstart.js,samples/README.md) |
+| Quickstart | [source code](https://github.com/googleapis/nodejs-projectify/blob/main/samples/quickstart.js) | [![Open in Cloud Shell][shell_img]](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/googleapis/nodejs-projectify&page=editor&open_in_editor=samples/quickstart.js,samples/README.md) |
 
 
 
@@ -115,7 +115,7 @@ More Information: [Google Cloud Platform Launch Stages][launch_stages]
 
 ## Contributing
 
-Contributions welcome! See the [Contributing Guide](https://github.com/googleapis/nodejs-projectify/blob/master/CONTRIBUTING.md).
+Contributions welcome! See the [Contributing Guide](https://github.com/googleapis/nodejs-projectify/blob/main/CONTRIBUTING.md).
 
 Please note that this `README.md`, the `samples/README.md`,
 and a variety of configuration files in this repository (including `.nycrc` and `tsconfig.json`)
@@ -127,7 +127,7 @@ to its templates in
 
 Apache Version 2.0
 
-See [LICENSE](https://github.com/googleapis/nodejs-projectify/blob/master/LICENSE)
+See [LICENSE](https://github.com/googleapis/nodejs-projectify/blob/main/LICENSE)
 
 [client-docs]: https://cloud.google.com/nodejs/docs/reference/projectify/latest
 
