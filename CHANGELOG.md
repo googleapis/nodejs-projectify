@@ -3,6 +3,13 @@
 [npm history][1]
 
 [1]: https://www.npmjs.com/package/@google-cloud/projectify?activeTab=versions
+### [2.1.1](https://www.github.com/googleapis/nodejs-projectify/compare/v2.1.0...v2.1.1) (2021-09-09)
+
+
+### Bug Fixes
+
+* **build:** switch primary branch to main ([#267](https://www.github.com/googleapis/nodejs-projectify/issues/267)) ([9e8d6e4](https://www.github.com/googleapis/nodejs-projectify/commit/9e8d6e48c080806b42164d7be0bd11197996f245))
+
 ## [2.1.0](https://www.github.com/googleapis/nodejs-projectify/compare/v2.0.1...v2.1.0) (2021-06-10)
 
 
