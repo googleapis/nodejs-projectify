@@ -4,7 +4,7 @@
 
 # [Google Cloud Common Projectify: Node.js Client](https://github.com/googleapis/nodejs-projectify)
 
-
+[![release level](https://img.shields.io/badge/release%20level-general%20availability%20%28GA%29-brightgreen.svg?style=flat)](https://cloud.google.com/terms/launch-stages)
 [![npm version](https://img.shields.io/npm/v/@google-cloud/projectify.svg)](https://www.npmjs.org/package/@google-cloud/projectify)
 [![codecov](https://img.shields.io/codecov/c/github/googleapis/nodejs-projectify/main.svg?style=flat)](https://codecov.io/gh/googleapis/nodejs-projectify)
 
