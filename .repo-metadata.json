@@ -1,9 +1,10 @@
 {
   "name": "projectify",
   "name_pretty": "Google Cloud Common Projectify",
-  "release_level": "ga",
+  "release_level": "stable",
   "language": "nodejs",
   "repo": "googleapis/nodejs-projectify",
   "distribution_name": "@google-cloud/projectify",
-  "client_documentation": "https://cloud.google.com/nodejs/docs/reference/projectify/latest"
+  "client_documentation": "https://cloud.google.com/nodejs/docs/reference/projectify/latest",
+  "library_type": "OTHER"
 }
