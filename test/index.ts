@@ -48,7 +48,7 @@ describe('projectId placeholder', () => {
             },
           ],
         },
-        PROJECT_ID
+        PROJECT_ID,
       ),
       {
         here: 'A ' + PROJECT_ID + ' Z',
@@ -74,7 +74,7 @@ describe('projectId placeholder', () => {
             ],
           },
         ],
-      }
+      },
     );
   });
 
@@ -84,11 +84,11 @@ describe('projectId placeholder', () => {
         {
           here: 'A {{projectId}} M {{projectId}} Z',
         },
-        PROJECT_ID
+        PROJECT_ID,
       ),
       {
         here: 'A ' + PROJECT_ID + ' M ' + PROJECT_ID + ' Z',
-      }
+      },
     );
   });
 
@@ -112,7 +112,7 @@ describe('projectId placeholder', () => {
         prop1: `A ${PROJECT_ID} Z`,
         buf: Buffer.from('test'),
       },
-      replaced
+      replaced,
     );
   });
 
