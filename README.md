@@ -10,7 +10,6 @@
 
 
 
-
 A simple utility for replacing the projectid token in objects.
 
 
