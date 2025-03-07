@@ -3,6 +3,17 @@
 [npm history][1]
 
 [1]: https://www.npmjs.com/package/@google-cloud/projectify?activeTab=versions
+## [5.0.0](https://github.com/googleapis/nodejs-projectify/compare/v4.0.0...v5.0.0) (2025-03-07)
+
+
+### ⚠ BREAKING CHANGES
+
+* migrate to Node 18 ([#345](https://github.com/googleapis/nodejs-projectify/issues/345))
+
+### Miscellaneous Chores
+
+* Migrate to Node 18 ([#345](https://github.com/googleapis/nodejs-projectify/issues/345)) ([60e3634](https://github.com/googleapis/nodejs-projectify/commit/60e363464bf938ab43fa823e9fdeb7302eff3c27))
+
 ## [4.0.0](https://github.com/googleapis/nodejs-projectify/compare/v3.0.0...v4.0.0) (2023-08-09)
 
 
